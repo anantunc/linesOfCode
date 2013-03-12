@@ -36,8 +36,8 @@
         </cfif>
     </cfloop>
     <cfset numdir++>
-	<br>
 </cfloop>
+<br>
 Number of Directories: #numdir# <br>
 Number of Files: #numfiles# <br>
 Number of lines of code: #totalnumlines# <br>
