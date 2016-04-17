@@ -1,4 +1,3 @@
-
 <!--- List of directories that need to be scanned --->
 <cfset dirList = "../controllers,../layouts,../model,../views">
 
@@ -13,6 +12,7 @@
 <cfloop list="#dirList#" index="ind" delimiters=",">
 	
 	<!--- Get all files in the directory and all its subdirectories (via recurse="true") --->
+	<cfdirectory directory="#expandPath( ind )#" name="DirFiles" action="list" recurse="true">
      
 	<!--- Loop over all files in a directory --->
     <cfloop query="DirFiles">
